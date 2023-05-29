@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İbrahim Gündoğmuş</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+
+    <!-- ! navbar start -->
+    <header class="header-nav header-nav-white" id="navbar">
+        <div class="navbar navbar-default navbar-expand-lg main-navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="" class="logo-text">İBRAHİM</a>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-collapse-toggle">
+                    <ul id="navlink" class="nav navbar-nav ml-auto ">
+                        <li> <a href="#home" class="nav-link acitve ">Home</a></li>
+                        <li> <a href="#about" class="nav-link">About</a></li>
+                        <li> <a href="#service" class="nav-link">Services</a></li>
+                        <li> <a href="#work" class="nav-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <button type="button" id="navbar-toggler" class="navbar-toggler" data-toggle="collapse"
+                    data-target="#navbar-collapse-toggle" aria-expanded="true">
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <!-- ! navbar end -->
+
+    <!-- ! main start -->
+    <section id="home" class="home-banner-01 " style="background-image:url(../static/img/back.jpg) ;">
+        <div class="container">
+            <div class="row full-screen align-items-center justify-content-center">
+                <div class="col-lg-9">
+                    <div class="ht-box text-center">
+                        <h3 class="white-color">
+                            Hello I'm
+                        </h3>
+                        <h2 class="white-color">İbrahim Gündoğmuş</h2>
+                        <p class="white-color">WEB DESIGN | WEB DEVELOPMENT</p>
+                        <div class="portfolio-button-wrapper">
+                            <a href="#work" class="portfolio-button">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! main end -->
+
+    <!-- ! about me start -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 ">
+                    <div class="about-image">
+                        <img src="../static/img/pp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="about-content-wrapper">
+                        <div class="about-title">
+                            <h2 class="dark-color">
+                                About
+                                <span>Me</span>
+
+                            </h2>
+                        </div>
+                        <h5 class="hello">Hello I'm İbrahim</h5>
+                        <p>{{ about.body|safe }}</p>
+
+                        <ul class="nav social-media">
+                            <li>
+                                <a href="https://www.instagram.com/ibrahim.gndgms/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ibrahim-g%C3%BCndo%C4%9Fmu%C5%9F-582874267/"
+                                    target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i> </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/ibrahim200406" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=905511067655" target="_blank">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:2004gundogmus2004@gmail.com" target="_blank">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="about-me-buttons">
+                            <a href="#contact" class="send-email">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ! about me end -->
+
+    <!-- ! services start -->
+    <section class="section services" id="service">
+        <div class="container">
+            <div class="row title">
+                <div class="col-md-12 col-lg-8">
+                    <div class="service-title">
+                        <h2>
+                            <span>MY</span>
+                            SERVICES
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h6 class="content-title">
+                                Web Development
+                            </h6>
+                            <p>{{ development.body|safe }}</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <i class="fa-regular fa-object-group"></i> </div>
+                        <div class="feature-content">
+                            <h6 class="content-title">
+                                Web Design
+                            </h6>
+                            <p>{{ design.body|safe }}</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h6 class="content-title">
+                                Database
+                            </h6>
+                            <p>{{ database.body|safe }}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! services end -->
+
+    <!-- ! portfolio start -->
+    <section class="section portfolio" id="work">
+        <div class="container">
+            <div class="row title">
+                <div class="col-md-12 col-lg-8">
+                    <div class="portfolio-title">
+                        <h2>
+                            <span>MY</span>
+                            PORTFOLIO
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                {% for portfolio in portfolios %}
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio-box">
+                            <div class="portfolio-img">
+                                <img src="{{ portfolio.portfolio_img.url }}" alt="">
+                                <div class="zoom-img">
+                                    <a href="{{ portfolio.portfolio_img.url }}" target="_blank">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+    </section>
+    <!-- ! portfolio end -->
+
+    <!-- ! contact us start -->
+    <!-- <section class="section contact-us" id="contact">
+        <div class="container">
+            <div class="row title">
+                <div class="col-md-12 col-lg-8">
+                    <div class="section-title">
+                        <h2>
+                            CONTACT
+                            <span>ME</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row contact-us-wrapper">
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <div class="form-title">
+                            <h5>Drop us a line</h5>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <form method="post" action=".">
+                            {% csrf_token %}
+
+                            {{ form.as_p }}
+
+                            <button>Send e-mail</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7"></div>
+
+        </div>
+        </div>
+    </section> -->
+    <!-- ! contact us end -->
+
+    <!-- ! footer start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-about text-center">
+                    <div class="footer-logo">
+                        İbrahim
+                    </div>
+                    <div class="footer-social-media justify-content-center">
+                        <a href="https://www.instagram.com/ibrahim.gndgms/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ibrahim-g%C3%BCndo%C4%9Fmu%C5%9F-582874267/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://github.com/ibrahim200406" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=905511067655" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <a href="mailto:2004gundogmus2004@gmail.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>© 2023 copyright all right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ! footer end -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://kit.fontawesome.com/fc9128b63c.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+
+</html>
