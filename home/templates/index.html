@@ -112,8 +112,8 @@
                             </li>
                         </ul>
                         <div class="about-me-buttons">
-                            <a href="#contact" class="send-email">
-                                Contact Me
+                            <a href="mailto:2004gundogmus2004@gmail.com" class="send-email">
+                                Send e-mail
                             </a>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
                             <div class="portfolio-img">
                                 <img src="{{ portfolio.portfolio_img.url }}" alt="">
                                 <div class="zoom-img">
-                                    <a href="{{ portfolio.portfolio_img.url }}" target="_blank">
+                                    <a href="{{ portfolio.portfolio_url }}" target="_blank">
                                         <i class="fa-solid fa-magnifying-glass-plus"></i>
                                     </a>
                                 </div>
@@ -221,52 +221,12 @@
     </section>
     <!-- ! portfolio end -->
 
-    <!-- ! contact us start -->
-    <!-- <section class="section contact-us" id="contact">
-        <div class="container">
-            <div class="row title">
-                <div class="col-md-12 col-lg-8">
-                    <div class="section-title">
-                        <h2>
-                            CONTACT
-                            <span>ME</span>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row contact-us-wrapper">
-                <div class="col-lg-7">
-                    <div class="contact-form">
-                        <div class="form-title">
-                            <h5>Drop us a line</h5>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-                        <form method="post" action=".">
-                            {% csrf_token %}
-
-                            {{ form.as_p }}
-
-                            <button>Send e-mail</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7"></div>
-
-        </div>
-        </div>
-    </section> -->
-    <!-- ! contact us end -->
-
     <!-- ! footer start -->
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-about text-center">
-                    <div class="footer-logo">
-                        İbrahim
-                    </div>
+
                     <div class="footer-social-media justify-content-center">
                         <a href="https://www.instagram.com/ibrahim.gndgms/" target="_blank">
                             <i class="fa-brands fa-instagram"></i>

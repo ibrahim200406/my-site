@@ -34,6 +34,7 @@ class Database(models.Model):
 class Portfolio(models.Model):
     portfolio_title = models.CharField(max_length=255)
     portfolio_img = models.ImageField(upload_to="portfolios")
+    portfolio_url = models.TextField(null=True)
 
     def __str__(self):
         return str(self.portfolio_title)

@@ -278,6 +278,10 @@ a {
   color: red;
 }
 
+.about-content-wrapper .social-media{
+  margin-top: 30px;
+}
+
 .about-content-wrapper .social-media > li > a {
   display: flex;
   justify-content: center;
