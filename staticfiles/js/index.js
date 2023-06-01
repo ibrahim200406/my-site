@@ -1,3 +1,30 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("click", function (event) {
   var menu = document.getElementById("navbar-collapse-toggle");
   var toggleButton = document.getElementById("navbar-toggler");
