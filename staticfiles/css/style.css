@@ -31,6 +31,7 @@ a {
   justify-content: center;
   background: #333333;
   transition: opacity 0.75s, visibility 0.75s;
+  z-index: 1000;
 }
 
 .loader--hidden {
@@ -563,8 +564,9 @@ a {
   margin-bottom: 20px;
 }
 .portfolio-box .zoom-img a i {
-  font-size: 40px;
+  font-size: 20px;
   transition: ease-in-out all 0.5s;
+
 }
 .portfolio-box:hover .zoom-img {
   background-color: #2727278a;
@@ -574,8 +576,10 @@ a {
   visibility: visible;
   color: white;
 }
+
+
 .portfolio-box .zoom-img a i:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 /* ! portfolio end */
 
